@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>亚博体育 · 专题资料页</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #fafaf8;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e1e1c;
+      line-height: 1.7;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Hero 区域 — 极简杂志风格 */
+    .hero {
+      border-bottom: 2px solid #d4d0c9;
+      padding-bottom: 2.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 450;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #1e1e1c;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero .subhead {
+      font-size: 1rem;
+      color: #6b6863;
+      border-left: 3px solid #b8b2a8;
+      padding-left: 1rem;
+      margin-top: 0.2rem;
+    }
+
+    /* 章节标题 */
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 460;
+      letter-spacing: 0.01em;
+      margin: 2.4rem 0 1rem 0;
+      color: #2b2a27;
+      border-bottom: 1px solid #e2ddd6;
+      padding-bottom: 0.35rem;
+    }
+
+    .section-title i {
+      font-style: normal;
+      background-color: #eae7e0;
+      padding: 0.1rem 0.6rem;
+      font-size: 0.75rem;
+      color: #4f4b44;
+      margin-left: 0.6rem;
+      vertical-align: middle;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+      color: #2b2a27;
+    }
+
+    .intro-fact {
+      background-color: #f0eee9;
+      padding: 1.2rem 1.5rem;
+      border-radius: 2px;
+      margin: 1.8rem 0 1.5rem;
+      font-size: 0.95rem;
+      color: #2d2c28;
+      border-left: 3px solid #aca69b;
+    }
+
+    .intro-fact strong {
+      font-weight: 550;
+    }
+
+    a {
+      color: #2b5e4b;
+      text-decoration: none;
+      border-bottom: 1px solid #c1cfc7;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #2b5e4b;
+    }
+
+    /* 卡片式场景 - 极窄描边 */
+    .scenario-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.8rem 0;
+    }
+
+    .scenario-item {
+      background: #ffffff;
+      border: 1px solid #e3dfd8;
+      padding: 1.2rem 1.4rem;
+      border-radius: 0;
+    }
+
+    .scenario-item .label {
+      font-weight: 470;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      color: #6d6961;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .scenario-item p {
+      margin-bottom: 0.2rem;
+      font-size: 0.95rem;
+    }
+
+    /* FAQ 摘要风格 */
+    .faq-mini {
+      margin: 2.2rem 0 1.8rem;
+      border-top: 1px solid #dad6ce;
+      padding-top: 1.5rem;
+    }
+
+    .faq-mini dt {
+      font-weight: 470;
+      margin: 1rem 0 0.3rem;
+      color: #2e2d29;
+      font-size: 1rem;
+    }
+
+    .faq-mini dd {
+      margin-left: 0;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+      color: #4c4943;
+    }
+
+    .footnote {
+      margin-top: 3rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #d4d0c9;
+      font-size: 0.88rem;
+      color: #6b6863;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .footnote .url-ref {
+      word-break: break-all;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 1.8rem 1rem 3rem; }
+      .hero h1 { font-size: 1.9rem; }
+      .scenario-item { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 首页横幅 / hero -->
+  <div class="hero">
+    <h1>亚博体育 · 信息索引</h1>
+    <div class="subhead">一份围绕平台背景、内容构成与使用场景的整理笔记</div>
+  </div>
+
+  <!-- 背景说明 -->
+  <h2 class="section-title">背景简述 <i>01</i></h2>
+  <p>亚博体育是一个以体育赛事资讯、数据查询及赛事相关内容为主的信息型站点。平台持续收录各类体育项目的基础资料、赛程安排以及过往赛季的综合数据，致力于为浏览者提供相对完整的体育信息陈列。与许多单纯追求即时比分或简短战报的网站不同，亚博体育更强调对所收录内容的系统性整理，使得用户能够在一个页面内获得某一赛事或球队的多维信息片段。这种偏重资料整编的定位，使其在同类站点中具备了一定辨识度。</p>
+
+  <div class="intro-fact">
+    <strong>资料整理向</strong> · 站内大量页面围绕赛事背景、球员数据、赛季回顾等非实时类内容展开，适合需要系统性查阅体育信息的浏览者。
+  </div>
+
+  <!-- 三段自然介绍：从信息索引角度 -->
+  <h2 class="section-title">内容构成与索引逻辑 <i>02</i></h2>
+  <p>从信息组织方式来看，<a href="https://chinese-yabosports.com">亚博体育</a>采用了较为传统的分类索引结构，按照体育项目、联赛地区以及赛事类型进行内容归整。每个项目下通常包含基础规则说明、参赛队伍概况、历史夺冠记录以及近几赛季的数据表格。这种结构使得站内内容更像一个可翻阅的体育档案，而非单纯的新闻聚合页。对于希望快速了解某项赛事发展脉络的用户来说，这种偏重长期记录而非短期热点的内容策略能提供更稳定的参考价值。</p>
+
+  <p>同时，平台在页面内部也加入了交叉引用——例如在某一球队的介绍页中，会列出该队参加过的决赛年份、主要对手及当时的赛果摘要。这种链接方式让浏览者可以在不同资料之间跳转，形成相对完整的信息网络。虽然交互形式偏向简单直白，但覆盖的深度在某些冷门联赛或次级赛事上反而显示出优势。</p>
+
+  <p>值得一提的是，站内的大部分数据条目都附带了简单的时间戳或赛季标识，这有助于浏览者判断信息的时效范围。对于需要纵向对比不同赛季表现的体育爱好者而言，这种细节设置降低了信息筛选的成本。</p>
+
+  <!-- 特点／场景卡片（替代常规列表） -->
+  <h2 class="section-title">典型使用场景 <i>03</i></h2>
+  <div class="scenario-cards">
+    <div class="scenario-item">
+      <div class="label">场景 A · 赛季回顾</div>
+      <p>查阅某联赛过去五届冠军的变迁，以及每个赛季的胜率分布、升降级情况。亚博体育的档案页面能够一次性呈现多个赛季的数据摘要，避免反复搜索。</p>
+    </div>
+    <div class="scenario-item">
+      <div class="label">场景 B · 球队基础档案</div>
+      <p>了解一支非主流联赛球队的主场变迁、历史名称更迭或近十年最佳射手。这类信息在主流新闻站上往往很难集中获取，而站内的球队页会以单独段落陈列。</p>
+    </div>
+    <div class="scenario-item">
+      <div class="label">场景 C · 规则与背景补充</div>
+      <p>当观看一场不太熟悉的运动项目（例如地板球、合球）时，可以利用站内规则说明页快速了解基本赛制和得分方式。此类页面通常配有简明的文字描述和历届赛事列表。</p>
+    </div>
+  </div>
+
+  <!-- FAQ 摘要 — 杂志式索引 -->
+  <div class="faq-mini">
+    <h2 class="section-title" style="border-bottom:none; margin-bottom:0.2rem;">FAQ 摘要 <i>04</i></h2>
+    <dl>
+      <dt>❓ 亚博体育的数据更新频率如何？</dt>
+      <dd>以赛季维度为主，多数条目在每年联赛结束后会进行补充或修正；实时比分类内容并非该站重点。</dd>
+      <dt>❓ 是否涵盖所有体育项目？</dt>
+      <dd>主要集中在足球、篮球、棒球、网球及部分室内运动；小众项目也在逐步收录中，但覆盖率尚不完整。</dd>
+      <dt>❓ 信息源是否有标注？</dt>
+      <dd>部分页面会在段落末尾以括号注明参考的数据来源或赛事官网，但并非所有内容都有明确出处，浏览时建议交叉核对。</dd>
+    </dl>
+  </div>
+
+  <!-- 页尾访问提示 — 平稳自然 -->
+  <div class="footnote">
+    <p>以上内容是基于公开信息与页面结构所作的整理性描述。如果你希望自行查看这些资料档案的原始布局与详细数据，可以直接前往 <a href="https://chinese-yabosports.com">亚博体育</a> 浏览其各个分类页面。平台本身仍处于持续补充内容的阶段，部分早期赛季的数据可能不如近期完善，但整体上仍是一个值得收藏的体育信息索引站点。</p>
+    <p style="margin-top:0.6rem; color:#8b867d;">本页仅作信息展示与介绍，不构成任何推荐或商业引导。</p>
+  </div>
+
+</div>
+</body>
+</html>
